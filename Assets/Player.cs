@@ -2,12 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Utility;
 
 public class Player {
     private Direction direction;
 
     public int X { get; set; }
     public int Y { get; set; }
+    public bool IsMoving { get; set; }
     public Direction Direction {
         get {
             return direction;
